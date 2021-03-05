@@ -1,0 +1,8 @@
+Download this file: http://curl.haxx.se/ca/cacert.pem
+Place this file in the C:\wamp64\bin\php\php.someversion folder
+Open php.iniand find this line:
+;curl.cainfo
+
+Change it to:
+
+curl.cainfo = "C:\wamp64\bin\php\php7.1.9\cacert.pem"

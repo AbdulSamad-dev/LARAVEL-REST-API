@@ -1,0 +1,71 @@
+IN THIS API YOU CAN PERFORM THE FOLLOWING OPERATIONS
+GET, POST, PUT, DELETE 
+
+1.ARTICLES
+2.PERSONS
+
+====================GET===============================
+#GET ALL
+method:get
+http://localhost:8000/api/articles/
+http://localhost:8000/api/persons/
+#GET SINGLE
+http://localhost:8000/api/articles/someid
+http://localhost:8000/api/person/someid
+====================POST=============================
+---------TO INSERT person---------- 
+#insert article
+eg;
+method: post
+url:http://localhost:8000/api/person/
+headers: content-Type:application/json
+body: raw data 
+{
+    "name": "somename",
+    "email": "someemailr@example.com",
+    "image": "https://randomuser.me/api/portraits/thumb/women/43.jpg"	
+}
+----------------------TO INSERT article-------------
+#insert article
+eg;
+method: post
+url:http://localhost:8000/api/article/
+headers: content-Type:application/json
+body: raw data 
+{
+    "title": "sometitle",
+    "body": "body text",
+   
+}
+====================PUT=============================
+---------TO UPDATE person---------- 
+#insert person
+eg;
+method: put
+url:http://localhost:8000/api/person/
+headers: content-Type:application/json
+body: raw data 
+{
+    "id": someid
+    "name": "somename",
+    "email": "someemailr@example.com",
+    "image": "https://randomuser.me/api/portraits/thumb/women/43.jpg"	
+}
+----------------------TO update article-------------
+#insert article
+eg;
+method: put
+url:http://localhost:8000/api/article/
+headers: content-Type:application/json
+body: raw data 
+{
+     "id":someid
+    "title": "sometitle",
+    "body": "body text",
+   
+}
+================== DELETE ========================
+
+method:delete
+http://localhost:8000/api/articles/someid
+http://localhost:8000/api/person/someid
